@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: #333;
+		}
+		.container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		label{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<label>
+					<input type="checkbox" id="checkbox1" name="checkbox1">
+					Чекбокс 1
+			</label>
+			<label>
+					<input type="checkbox" id="checkbox2" name="checkbox2">
+					Чекбокс 2
+			</label>
+			<label>
+					<input type="checkbox" id="checkbox3" name="checkbox3">
+					Чекбокс 3
+			</label>
+			<label>
+					<input type="checkbox" id="checkbox4" name="checkbox4">
+					Чекбокс 4
+			</label>
+			<label>
+					<input type="checkbox" id="checkbox5" name="checkbox5">
+					Чекбокс 5
+			</label>
+			<button id="save-button" type="button">Save</button>
+			<button id="history-button" type="button">Show history</button>
+			<button id="undo-button" type="button">Delete last save</button>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
