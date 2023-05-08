@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: #333;
+		}
+		.container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		select, button{
+			margin: 20px;
+			padding: 10px 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Ціна - <div id="bill"></div> </h1>
+
+	<div class="container">
+		<select id="mySelect">
+			<option value="Pickup">Самовивіз</option>
+			<option value="External service">Зовнішня служба доставки</option>
+			<option value="Own service">Власна служба доставки</option>
+		</select>
+		<button onclick="start()">Розрахувати</button>
+	</div>
+
+	<h1>Ціна з доставкою - <div id="billWithServise"></div> </h1>
+
+<!-- psevdoScript файл основан на псевдокоде из практического занятия -->
+<!-- script файл основан на поверхностном понимании патерна, который был создан на основе примера из интернета -->
+
+	<!-- <script src="script.js"></script> -->
+	<script src="psevdoScript.js"></script>
+</body>
+</html>
