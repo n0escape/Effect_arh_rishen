@@ -5,14 +5,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<script src="script.js"></script>
 	<style>
 		body{
 			background-color: #333;
 		}
+		.show {
+			display: block;
+		}
+		.hide {
+			display: none;
+		}
 	</style>
 </head>
 <body>
-	
+
+	<form id="formID">
+		<input type="checkbox" id="differet-receiver" name="differet-receiver">
+		<!-- 
+		<div id="textFeilds" style="display: none;">
+			<input id="name-differet-receiver" name="name-differet-receiver" value="Maвка" type="text">
+			<input id="name-differet-receiver" name="phone-differet-receiver" value="0962422435" type="number">
+		</div> 
+		-->
+		<button id="save-button" type="button">Save</button>
+	</form>
+
+	<script src="script.js"></script>
 </body>
 </html>
