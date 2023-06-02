@@ -1,5 +1,4 @@
 class ParentClass{
-
 	constructor(essence, parameter, info) {
 		this.essence = essence;
 		this.parameter = parameter;
