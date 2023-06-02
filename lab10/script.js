@@ -98,3 +98,4 @@ function removeBtn() {
 	const inputs = new Inputs();
 	inputs.removeElement();
 }
+
