@@ -22,8 +22,8 @@ class Inputs extends Form{
 	}
 
 	removeElement(){
-		this.lastInput = form.lastElementChild;
-		this.form.removeChild(lastInput);
+		this.lastInput = this.form.lastElementChild;
+		this.form.removeChild(this.lastInput);
 	}
 }
 
@@ -80,7 +80,7 @@ class CompoundInputs extends Inputs{
 }
 
 
-function addText(){
+function addToForm(){
 	const text = new Text();
 	const checkbox = new Checkbox();
 	text.addElement();
@@ -94,37 +94,7 @@ function addText(){
 
 }
 
-
-
-
-
-
-
-
-
-
-
-function addElement() {
-	// Создаем новый элемент input
-	var newInput = document.createElement("input");
-	newInput.type = "text";
-	newInput.name = "email";
-	newInput.placeholder = "Введите email";
-
-	// Получаем форму по ее идентификатору
-	var form = document.getElementById("myForm");
-
-	// Добавляем новый элемент в форму
-	form.appendChild(newInput);
-}
-
-function removeElement() {
-	// Получаем форму по ее идентификатору
-	var form = document.getElementById("myForm");
-
-	// Получаем последний элемент формы
-	var lastInput = form.lastElementChild;
-
-	// Удаляем последний элемент из формы
-	form.removeChild(lastInput);
+function removeBtn() {
+	const inputs = new Inputs();
+	inputs.removeElement();
 }
